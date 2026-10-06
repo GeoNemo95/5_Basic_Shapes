@@ -8,6 +8,7 @@ class Rectangle(BasicShape):
         self.name = name
         self._length = length
         self._width = width
+        self.area = self.calc_area()
 
     @property
     def length(self) -> float:
@@ -36,3 +37,7 @@ class Rectangle(BasicShape):
         if val <= 0:
             raise ValueError("Width must be above 0")
         self._width = val
+
+    def calc_area(self):
+        """Returns area of rectangle given it's length and width"""
+        return length * width

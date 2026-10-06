@@ -52,6 +52,6 @@ class Circle(BasicShape):
 
     def calc_area(self):
         """Returns area of circle from the given radius"""
-        return math.pi*(radius**2)
+        return math.pi * (radius ** 2)
 
 
