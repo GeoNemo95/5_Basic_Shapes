@@ -4,7 +4,7 @@ class Rectangle(BasicShape):
     """Rectangle class that inherits from BasicShape class"""
     def __init__(self, length: float, width: float, name):
         """Calls BasicShape constructor"""
-        super()__init__("Rectangle")
+        super.()__init__("Rectangle")
         self.name = name
         self._length = length
         self._width = width
