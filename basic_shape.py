@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 class BasicShape(ABC):
+    """Class representing a shape"""
     
     def __init__(self, name:str):
         """Constructor for Basic Shape"""
