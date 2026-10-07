@@ -4,14 +4,12 @@ class Square(Rectangle):
     """Square class that inherits from Rectangle class"""
     def __init__(self, side:float, name: str = "Square"):
         """Calls Rectangle constructor"""
-        super().__init__(name, length=side, width=side)
-        self._name = name
-        self._side = side
+        super().__init__(length=side, width=side, name=name)
 
     @property
     def side(self) -> float:
         """Getter for _side property"""
-        return self._side
+        return self.length
 
     @side.setter
     def side(self, val: float):
@@ -20,4 +18,5 @@ class Square(Rectangle):
             raise TypeError("Side must be a number")
         if val <= 0:
             raise ValueError("Side must be above 0")
-        self._side = val
+        self._length = val
+        self._width = val

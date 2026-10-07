@@ -2,13 +2,11 @@ from basic_shape import BasicShape
 
 class Rectangle(BasicShape):
     """Rectangle class that inherits from BasicShape class"""
-    def __init__(self, length: float = 0.0, width: float = 0.0, name: str = "Rectangle"):
+    def __init__(self, length: float, width: float, name: str = "Rectangle"):
         """Calls BasicShape constructor"""
-        super.()__init__(name)
-        self.name = name
+        super().__init__(name)
         self._length = length
         self._width = width
-        self.area = self.calc_area()
 
     @property
     def length(self) -> float:
@@ -37,7 +35,7 @@ class Rectangle(BasicShape):
         if val <= 0:
             raise ValueError("Width must be above 0")
         self._width = val
-
+        
     def calc_area(self):
         """Returns area of rectangle given it's length and width"""
-        return length * width
+        return self.length * self.width

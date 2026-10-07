@@ -3,14 +3,12 @@ from basic_shape import BasicShape
 
 class Circle(BasicShape):
     """Circle class that inherits from BasicShape class"""
-    def __init__(self, x_center: float, y_center: float, radius: float,name: str = "Circle" ):
+    def __init__(self, x_center: float = 0.0, y_center: float = 0.0, radius: float = 0.0,name: str = "Circle" ):
         """Calls BasicShape constructor"""
         super().__init__(name)
-        self.name = name
         self._x_center = x_center
         self._y_center = y_center
         self._radius = radius
-        self.area = self.calc_area()
 
     @property
     def x_center(self) -> float:
@@ -52,6 +50,6 @@ class Circle(BasicShape):
 
     def calc_area(self):
         """Returns area of circle from the given radius"""
-        return math.pi * (radius ** 2)
+        return math.pi * (self.radius ** 2)
 
 
