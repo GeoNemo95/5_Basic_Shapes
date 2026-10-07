@@ -26,6 +26,7 @@
     <Compile Include="rectangle.py" />
     <Compile Include="square.py" />
     <Compile Include="polymorphism.py" />
+    <Compile Include="tests\__init__.py" />
     <Compile Include="tests\test_basic_shape.py" />
     <Compile Include="tests\test_circle.py" />
     <Compile Include="tests\test_rectangle.py" />
