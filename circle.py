@@ -3,9 +3,9 @@ from basic_shape import BasicShape
 
 class Circle(BasicShape):
     """Circle class that inherits from BasicShape class"""
-    def __init__(self, x_center: float, y_center: float, radius: float,name ):
+    def __init__(self, x_center: float, y_center: float, radius: float,name: str = "Circle" ):
         """Calls BasicShape constructor"""
-        super().__init__("Circle")
+        super().__init__(name)
         self.name = name
         self._x_center = x_center
         self._y_center = y_center

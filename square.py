@@ -2,10 +2,10 @@ from rectangle import Rectangle
 
 class Square(Rectangle):
     """Square class that inherits from Rectangle class"""
-    def __init__(self, side:float, name)
-    """Calls Rectangle constructor"""
-        super.__init__("Square")
-        self.name = name
+    def __init__(self, side:float, name: str = "Square"):
+        """Calls Rectangle constructor"""
+        super().__init__(name, length=side, width=side)
+        self._name = name
         self._side = side
 
     @property

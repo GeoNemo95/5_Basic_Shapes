@@ -2,9 +2,9 @@ from basic_shape import BasicShape
 
 class Rectangle(BasicShape):
     """Rectangle class that inherits from BasicShape class"""
-    def __init__(self, length: float, width: float, name):
+    def __init__(self, length: float = 0.0, width: float = 0.0, name: str = "Rectangle"):
         """Calls BasicShape constructor"""
-        super.()__init__("Rectangle")
+        super.()__init__(name)
         self.name = name
         self._length = length
         self._width = width
