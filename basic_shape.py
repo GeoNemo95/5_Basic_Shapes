@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 class BasicShape(ABC):
     """Class representing a shape"""
     
-    def __init__(self, name:str):
+    def __init__(self, name:str = None):
         """Constructor for Basic Shape"""
         self._name = name
         self._area = 0.0
